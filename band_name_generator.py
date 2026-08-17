@@ -13,5 +13,5 @@ city = input("What is the name of the city you live in? \n")
 # user's input of pet's name
 pet = input("What is the name of your pet? \n")
 
-# band generator
+# band generator output message with new band name
 print(f"Your band name could be {city} {pet}")
