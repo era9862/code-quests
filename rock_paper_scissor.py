@@ -26,8 +26,6 @@ else:
     print(f'You chose {user_choice}')
     print(f'Computer chose {computer_choice}')
 
-
-
     # User's results
 
     # Tie
