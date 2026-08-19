@@ -21,7 +21,7 @@ total_people = int(input("How many people are you splitting? "))
 convert_tip = tip_percent / 100
 tip_amount = convert_tip * total_cost
 total_bill = total_cost + tip_amount
-amount_each_person_pay = round(total_bill / total_people, 2)
+amount_each_person_pay = format(total_bill / total_people, ".2f")
 
 # Total amount per person message
 print(f"Each person should pay ${amount_each_person_pay}")
