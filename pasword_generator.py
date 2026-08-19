@@ -19,15 +19,14 @@ special_amount = int(input('How many special characters would you like? \n'))
 
 # Get the random characters
 get_characters = ''
-while number_amount != 0:
+for i in range(0, number_amount):
     get_characters += random.choice(numbers)
-    number_amount -= 1
 
-while letter_amount != 0:
+for i in range(0, letter_amount):
     get_characters += random.choice(letters)
-    letter_amount -= 1
 
-while special_amount != 0:
+for i in range(0, special_amount):
     get_characters += random.choice(special_chars)
-    special_amount -= 1
+
+print(get_characters)
 
