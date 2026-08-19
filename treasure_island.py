@@ -17,11 +17,11 @@ if first_quest == 'left':
     second_quest = input('You have come to a lake. '
                          'There is an island in the middle of the lake. '
                           "Type 'swim' to swim across "
-                          "Type 'wait' to wait for the boat\n").lower()
+                          "or type 'wait' to wait for the boat\n").lower()
     if second_quest == 'wait':
 
         #Third Quest
-        third_quest = input("You have arrived to the island unharmed "
+        third_quest = input("You have arrived to the island unharmed. "
                             "There is a house with three doors? "
                             "Which door do you choose: Blue, Yellow, or Red?\n").lower()
         if third_quest == 'yellow':
