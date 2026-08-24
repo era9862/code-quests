@@ -18,15 +18,21 @@ letter_amount = int(input('How many letters would you like? \n'))
 special_amount = int(input('How many special characters would you like? \n'))
 
 # Get the random characters
-get_characters = ''
+get_characters = []
 for i in range(0, number_amount):
-    get_characters += random.choice(numbers)
+    get_characters.append(random.choice(numbers))
 
 for i in range(0, letter_amount):
-    get_characters += random.choice(letters)
+    get_characters.append(random.choice(letters))
 
 for i in range(0, special_amount):
-    get_characters += random.choice(special_chars)
+    get_characters.append(random.choice(special_chars))
 
-print(get_characters)
+# Generate password
+random.shuffle(get_characters) #shuffle letters in the list
+password = ''
+for char in get_characters:
+    password += char
+
+print(f'Your new password is {password}')
 
