@@ -1,0 +1,1 @@
+words = ['dog', 'elephant', 'hello', 'notebook', 'computer']

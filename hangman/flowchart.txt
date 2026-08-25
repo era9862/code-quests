@@ -1,0 +1,16 @@
+Flow chart and pesudocode 
+
+Flowchart:
+1. A word is choosen
+2. Generate the blanks for the word
+3. Set the diffculty (number of lives)
+    3a. Easy = 10 lives
+    3b. Medium = 7 lives
+    3c. Hard = 5 lives
+4. user guesses a letter
+5a. If its wrong: player loses life
+5b. If its right: replace the respected blanks to the guessed letter  
+6. Repeat steps 4-5 until there are no more lives or word is guessed right 
+
+data.py 
+list of words to choose from for the game
