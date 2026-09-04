@@ -5,8 +5,8 @@ Flowchart:
 2. Generate the blanks for the word
 3. Set the diffculty (number of lives)
     3a. Easy = 10 lives
-    3b. Medium = 7 lives
-    3c. Hard = 5 lives
+    3b. Medium = 8 lives
+    3c. Hard = 6 lives
 4. user guesses a letter
 5a. If its wrong: player loses life
 5b. If its right: replace the respected blanks to the guessed letter  
@@ -14,3 +14,25 @@ Flowchart:
 
 data.py 
 list of words to choose from for the game
+
+display.py
+display of each body part that represents a life
+
+game.py
+1. random choose word
+2. get legth of the word
+3. Generate blank space with the length of the word
+4. create a dict {letter: [index of where the letter is in the word]}
+5. get the number of lives from the mode
+6. while loop based on number of guesses until it hits zero or no more blank spaces
+    a. player guesses
+        i. letter guess in dict
+            1. replace blanks with the guessed letter in the right space
+        ii. letter guess not in dict
+            1. display new body part
+            2. minus 1 guess
+easy mode function (calls all display for each guess)
+medium mode function (calls some function together for guesses)
+hard mode function (calls some function together for guesses)
+
+
